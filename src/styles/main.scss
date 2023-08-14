@@ -11,6 +11,10 @@
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+
+    @media (max-width: 768px){
+        max-width: 80%;
+    }
     
 }
 
@@ -25,6 +29,7 @@
         padding: 100px 16px;
         border: 2px solid black;
         height: 40vh;
+        margin: 10px;
 
         &__title{
             margin-bottom: 16px;
@@ -47,5 +52,43 @@
 
         }
     }
+    @media (max-width: 768px){
+        .event{
+            display: block;
 
+            &__info{
+                
+                padding: 16px;
+                border: 2px solid black;
+                height: 40vh;
+        
+                &__title{
+                    font-size: 16px;
+                    margin-bottom: 16px;
+                    text-transform: uppercase;
+                }
+        
+                &__description{
+                    margin-bottom: 16px;
+                    background-color: #e65465;
+                    text-align: center;
+                    padding: 16px 0px;
+                    font-size: 12px;
+                    
+                }
+        
+                &__list{
+                    display: block;
+                    padding: 0;
+                    
+                    &__item{
+                        
+                        margin-bottom: 16px;
+                    }
+        
+                }
+            }
+        }
+        
+    }
 }
